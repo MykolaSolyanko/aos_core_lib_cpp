@@ -10,6 +10,8 @@ set(TARGET aoscommoncpp_test)
 # ######################################################################################################################
 # Sources
 # ######################################################################################################################
+add_definitions(-DAOS_CONFIG_MONITORING_SEND_TIMEOUT_MS=800
+    -DAOS_CONFIG_MONITORING_POLL_TIMEOUT_MS=600)
 
 set(SOURCES
     src/tools/enum_test.cpp
@@ -25,6 +27,8 @@ set(SOURCES
     src/tools/memory_test.cpp
     src/tools/queue_test.cpp
     src/tools/function_test.cpp
+    ${CMAKE_SOURCE_DIR}/src/common/resourcemonitor/resourcemonitor.cpp
+    src/resourcemonitor_test.cpp
     src/types_test.cpp
 )
 
