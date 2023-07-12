@@ -53,6 +53,8 @@ public:
             }
         }
 
+        mStop = false;
+
         auto err = mFunction.Capture(functor, arg);
         if (!err.IsNone()) {
             return err;
