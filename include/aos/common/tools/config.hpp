@@ -103,7 +103,7 @@
  * File/directory path len.
  */
 #ifndef AOS_CONFIG_FS_FILE_PATH_LEN
-#define AOS_CONFIG_FS_FILE_PATH_LEN 256
+#define AOS_CONFIG_FS_FILE_PATH_LEN 512
 #endif
 
 /**

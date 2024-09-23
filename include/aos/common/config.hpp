@@ -75,7 +75,7 @@
  * URL len.
  */
 #ifndef AOS_CONFIG_TYPES_URL_LEN
-#define AOS_CONFIG_TYPES_URL_LEN 256
+#define AOS_CONFIG_TYPES_URL_LEN 512
 #endif
 
 /**
